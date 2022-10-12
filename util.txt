@@ -1,0 +1,19 @@
+========================>> Vagrant <<========================
+
+1. vagrant init
+2. vagrant up
+3. vagrant ssh <nome> (Acessar a maq via terminal - Usuário e Senha.: vagrant)
+	a. vagrant ssh master
+	b. vagrant ssh node1
+4. vagrant destroy -f
+
+=========>> Comando Linux na Máq.Lider ("master") <<=========
+
+1. docker node ls
+2. docker service ls
+
+Complementar.:
+=> docker service create --name web-serverApache --replicas 3 -p 80:80 httpd
+=> docker service ps web-serverApache
+
+=============================================================
